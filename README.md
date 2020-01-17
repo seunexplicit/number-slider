@@ -3,17 +3,30 @@ Angular js dynamic number slider API for both mobile and desktop web page;
 
 #Usage
 import the following script into your project which are available in the repositories
-<script type="text/javascript" src="**containing folder**/hammer.min.js">
+
+<html>
   
-<script type="text/javascript" src="**containing folder**/angular.min.js"></script>
+  <head>
+  
+    <script type="text/javascript" src="**containing folder**/hammer.min.js"></script>
+  
+    <script type="text/javascript" src="**containing folder**/angular.min.js"></script>
 
-<script type="text/javascript" src="**containing folder**/angular.hammer.js"></script>
+    <script type="text/javascript" src="**containing folder**/angular.hammer.js"></script>
 
-<script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+
+  </head>
+  
+</html>
   
 then create an html element using this 
 
-<number-slider></number-slider>
+<body>
+  
+    <number-slider></number-slider>
+  
+</body
 
 the following attribute are available on the element;
 
