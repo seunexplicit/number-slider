@@ -54,7 +54,7 @@ the following attribute are available on the element;
 
 <html>
   
-  <head>
+  <body>
     
     <script type="text/javascript" src="**containing folder**/hammer.min.js">
     
@@ -76,13 +76,10 @@ the following attribute are available on the element;
       
       </script>
   
-  </head
-  
-  <body>
       
       <div ng-app="sliderApp" ng-controller="sliderCtrl">
        
-       <number-slider slider-upper-limit="300" slider-lower-limit="100" slider-max-range="280" slider-min-range="120" range="userValue"     width="200" height="7px" color="#f3e4d5"></number-slider>
+       <number-slider slider-upper-limit="300" slider-lower-limit="100" slider-max-range="280" slider-min-range="120" range="userValue" width="200" height="7px" color="#f3e4d5"></number-slider>
       
       </div>
   
