@@ -4,14 +4,19 @@ Angular js dynamic number slider API for both mobile and desktop web page;
 #Usage
 import the following script into your project which are available in the repositories
 <script type="text/javascript" src="**containing folder**/hammer.min.js">
+  
 <script type="text/javascript" src="**containing folder**/angular.min.js"></script>
+
 <script type="text/javascript" src="**containing folder**/angular.hammer.js"></script>
+
 <script type="text/javascript" src="slider.js"></script>
   
 then create an html element using this 
+
 <number-slider></number-slider>
 
 the following attribute are available on the element;
+
 1 slider-upper-limit (optional):- it sets the slider upper value, say the slider range is to be 100-600; the slider-upper-limit is set to 600. it receives number type value and the default value = 100;
 
 2 slider-lower-limit (optional):- it sets the slider lower value, say the slider range is to be 100-600; the slider-lower-limit is set to 100. it receives number type value and the default value = 0;
@@ -33,22 +38,41 @@ the following attribute are available on the element;
 
 ****complete code*****************
   
+
 <html>
+  
   <head>
+    
     <script type="text/javascript" src="**containing folder**/hammer.min.js">
+    
     <script type="text/javascript" src="**containing folder**/angular.min.js"></script>
+    
     <script type="text/javascript" src="**containing folder**/angular.hammer.js"></script>
+    
     <script type="text/javascript" src="slider.js"></script>
-      <script type="text/javascript">
+     
+     <script type="text/javascript">
+        
         angular.module("sliderApp", ['slider'])
+        
         .controller("sliderCtrl", ["$scope", function($scope){
+          
           $scope.userValue = 180;
+        
         }]);
+      
       </script>
+  
   </head
+  
   <body>
+      
       <div ng-app="sliderApp" ng-controller="sliderCtrl">
-       <number-slider slider-upper-limit="300" slider-lower-limit="100" slider-max-range="280" slider-min-range="120" range="userValue"         width="200" height="7px" color="#f3e4d5"></number-slider>
+       
+       <number-slider slider-upper-limit="300" slider-lower-limit="100" slider-max-range="280" slider-min-range="120" range="userValue"     width="200" height="7px" color="#f3e4d5"></number-slider>
+      
       </div>
+  
   </body
+
 </html>
